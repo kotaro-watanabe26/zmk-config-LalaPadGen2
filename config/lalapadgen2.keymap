@@ -49,14 +49,9 @@
     combos {
         compatible = "zmk,combos";
 
-        English {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <13 12>;
-        };
-
-        Japanese {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <16 17>;
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
         };
     };
 
@@ -66,13 +61,13 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q         &kp W         &kp E              &kp R                        &kp T                                                  &kp Y        &kp U      &kp I         &kp O       &kp P
-&kp A         &kp S         &kp D              &kp F                        &kp G                                                  &kp H        &kp J      &kp K         &kp L       &mt2 EQUAL MINUS
-&kp Z         &kp X         &kp C              &kp V                        &kp B                                                  &kp N        &kp M      &kp COMMA     &kp PERIOD  &kp SLASH
-&kp LEFT_GUI  &kp LEFT_ALT  &lt 3 PRINTSCREEN  &mt LEFT_CONTROL LANGUAGE_2  &lt 4 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &kp BACKSPACE  &lt 1 ENTER  &lt 2 TAB  &lt 3 ESCAPE  &kp DELETE  &kp BACKSLASH
-              &none         &kp RIGHT          &kp DOWN                     &kp LEFT     &kp UP                     &kp UP         &kp LEFT     &kp DOWN   &kp RIGHT     &none
-&mkp LCLK     &mkp RCLK     &mkp MCLK                                                                                                                      &mkp LCLK     &mkp RCLK   &mkp MCLK
-&mkp MB4      &mkp MB5      &kp LG(TAB)        &kp LG(D)                    &kp LCTRL                                              &mkp MB4     &mkp MB5   &kp LG(TAB)   &kp LG(D)   &kp LCTRL
+&kp Q      &kp W         &kp E         &kp R             &kp T                                                             &kp Y        &kp U         &kp I         &kp O       &kp P
+&kp A      &kp S         &kp D         &kp F             &kp G                                                             &kp H        &kp J         &kp K         &kp L       &mt2 EQUAL MINUS
+&kp Z      &kp X         &kp C         &kp V             &kp B                                                             &kp N        &kp M         &kp COMMA     &kp PERIOD  &kp SLASH
+&kp TAB    &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANGUAGE_2  &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT LANGUAGE_1  &kp BACKSPACE  &lt 1 ENTER  &lt 2 DELETE  &lt 3 ESCAPE  &kp DELETE  &kp BACKSLASH
+           &none         &kp RIGHT     &kp DOWN          &kp LEFT                &kp UP                     &kp UP         &kp LEFT     &kp DOWN      &kp RIGHT     &none
+&mkp LCLK  &mkp RCLK     &mkp MCLK                                                                                                                    &mkp LCLK     &mkp RCLK   &mkp MCLK
+&mkp MB4   &mkp MB5      &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                                         &mkp MB4     &mkp MB5      &kp LG(TAB)   &kp LG(D)   &kp LCTRL
             >;
         };
 
@@ -92,13 +87,13 @@
         ARROW_LAYER {
             display-name = "arrow_layer";
             bindings = <
-&none   &none   &none   &none   &none                   &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &none
-&none   &none   &none   &none   &none                   &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_SHIFT
-&none   &none   &none   &none   &none                   &none          &mkp MB4  &none           &mkp MB5   &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans          &trans     &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans          &trans
-&trans  &trans  &trans                                                           &trans          &trans     &trans
-&trans  &trans  &trans  &trans  &trans                  &trans         &trans    &trans          &trans     &trans
+&none   &none   &none   &none   &none                   &kp LC(V)  &kp HOME           &kp UP_ARROW     &kp END    &none
+&none   &none   &none   &none   &none                   &kp LC(C)  &kp LEFT           &kp DOWN_ARROW   &kp RIGHT  &kp RIGHT_SHIFT
+&none   &none   &none   &none   &none                   &kp LC(X)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans           &trans     &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans           &trans
+&trans  &trans  &trans                                                                &trans           &trans     &trans
+&trans  &trans  &trans  &trans  &trans                  &trans     &trans             &trans           &trans     &trans
             >;
         };
 
@@ -117,13 +112,13 @@
 
         SYMBOL_LAYER {
             bindings = <
-&none   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                   &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT               &kp DOUBLE_QUOTES
-&none   &kp DOLLAR       &kp PERCENT   &kp LCTRL             &none                   &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON         &kp COLON
-&none   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &none                   &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp UNDERSCORE
-&trans  &trans           &trans        &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans                &trans
-        &trans           &trans        &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans
-&trans  &trans           &trans                                                                                       &trans                 &trans                &trans
-&trans  &trans           &trans        &trans                &trans                  &trans     &trans                &trans                 &trans                &trans
+&kp PRINTSCREEN  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                   &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT               &kp DOUBLE_QUOTES
+&none            &kp DOLLAR       &kp PERCENT   &kp LCTRL             &none                   &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON         &kp COLON
+&none            &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &none                   &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp UNDERSCORE
+&trans           &trans           &trans        &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans                &trans
+                 &trans           &trans        &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans
+&trans           &trans           &trans                                                                                       &trans                 &trans                &trans
+&trans           &trans           &trans        &trans                &trans                  &trans     &trans                &trans                 &trans                &trans
             >;
         };
     };
