@@ -55,7 +55,7 @@
         };
 
         to_japan {
-            bindings = <&to 5>;
+            bindings = <&to 0>;
             key-positions = <9 41>;
         };
 
@@ -129,44 +129,6 @@
                  &trans           &trans        &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans
 &trans           &trans           &trans                                                                                       &trans                 &trans                &trans
 &trans           &trans           &trans        &trans                &trans                  &trans     &trans                &trans                 &trans                &trans
-            >;
-        };
-
-        Default_Layer_Japan {
-            display-name = "default_layer_japan";
-            bindings = <
-&kp Q      &kp W         &kp E         &kp R             &kp T                                                             &kp Y        &kp U         &kp I         &kp O       &kp P
-&kp A      &kp S         &kp D         &kp F             &kp G                                                             &kp H        &kp J         &kp K         &kp L       &mt2 EQUAL MINUS
-&kp Z      &kp X         &kp C         &kp V             &kp B                                                             &kp N        &kp M         &kp COMMA     &kp PERIOD  &kp SLASH
-&kp TAB    &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANGUAGE_2  &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT LANGUAGE_1  &kp BACKSPACE  &lt 6 ENTER  &lt 2 DELETE  &lt 3 ESCAPE  &kp DELETE  &kp BACKSLASH
-           &none         &kp RIGHT     &kp DOWN          &kp LEFT                &kp UP                     &kp UP         &kp LEFT     &kp DOWN      &kp RIGHT     &none
-&mkp LCLK  &mkp RCLK     &mkp MCLK                                                                                                                    &mkp LCLK     &mkp RCLK   &mkp MCLK
-&mkp MB4   &mkp MB5      &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                                         &mkp MB4     &mkp MB5      &kp LG(TAB)   &kp LG(D)   &kp LCTRL
-            >;
-        };
-
-        Number_Layer_Japan {
-            display-name = "number_layer_japan";
-            bindings = <
-&none             &kp F7             &kp F8  &kp F9  &kp F12                  &kp ASTRK         &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&none             &kp F4             &kp F5  &kp F6  &kp F11                  &kp SLASH         &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&none             &kp F1             &kp F2  &kp F3  &kp F10                  &kp NUMBER_0      &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans            &trans             &trans  &trans  &trans   &trans  &trans  &trans            &trans             &trans        &trans        &trans
-                  &trans             &trans  &trans  &trans   &trans  &trans  &trans            &trans             &trans        &trans
-&trans            &trans             &trans                                                                        &trans        &trans        &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans  &trans  &trans                   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans
-            >;
-        };
-
-        SYMBOL_LAYER_JAPAN {
-            bindings = <
-&kp PRINTSCREEN  &kp SQT          &kp ASTERISK      &kp LEFT_PARENTHESIS  &none                   &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT               &kp DOUBLE_QUOTES
-&none            &kp DOLLAR       &kp PERCENT       &kp AMPERSAND         &none                   &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON         &kp COLON
-&none            &kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH              &none                   &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp UNDERSCORE
-&trans           &trans           &trans            &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans                &trans
-                 &trans           &trans            &trans                &trans  &trans  &trans  &trans     &trans                &trans                 &trans
-&trans           &trans           &trans                                                                                           &trans                 &trans                &trans
-&trans           &trans           &trans            &trans                &trans                  &trans     &trans                &trans                 &trans                &trans
             >;
         };
     };
