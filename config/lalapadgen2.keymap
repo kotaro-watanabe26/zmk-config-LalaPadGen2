@@ -53,16 +53,6 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
-
-        to_japan {
-            bindings = <&to 0>;
-            key-positions = <9 41>;
-        };
-
-        to_english {
-            bindings = <&to 0>;
-            key-positions = <0 30>;
-        };
     };
 
     keymap {
@@ -71,13 +61,13 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q      &kp W         &kp E         &kp R             &kp T                                                             &kp Y        &kp U         &kp I         &kp O       &kp P
-&kp A      &kp S         &kp D         &kp F             &kp G                                                             &kp H        &kp J         &kp K         &kp L       &mt2 EQUAL MINUS
-&kp Z      &kp X         &kp C         &kp V             &kp B                                                             &kp N        &kp M         &kp COMMA     &kp PERIOD  &kp SLASH
-&kp TAB    &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANGUAGE_2  &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT LANGUAGE_1  &kp BACKSPACE  &lt 1 ENTER  &lt 2 DELETE  &lt 3 ESCAPE  &kp DELETE  &kp BACKSLASH
-           &none         &kp RIGHT     &kp DOWN          &kp LEFT                &kp UP                     &kp UP         &kp LEFT     &kp DOWN      &kp RIGHT     &none
-&mkp LCLK  &mkp RCLK     &mkp MCLK                                                                                                                    &mkp LCLK     &mkp RCLK   &mkp MCLK
-&mkp MB4   &mkp MB5      &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                                         &mkp MB4     &mkp MB5      &kp LG(TAB)   &kp LG(D)   &kp LCTRL
+&kp Q      &kp W         &kp E         &kp R             &kp T                                                             &kp Y        &kp U         &kp I        &kp O       &kp P
+&kp A      &kp S         &kp D         &kp F             &kp G                                                             &kp H        &kp J         &kp K        &kp L       &mt2 EQUAL MINUS
+&kp Z      &kp X         &kp C         &kp V             &kp B                                                             &kp N        &kp M         &kp COMMA    &kp PERIOD  &kp SLASH
+&kp TAB    &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANGUAGE_2  &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT LANGUAGE_1  &kp BACKSPACE  &lt 1 ENTER  &lt 2 DELETE  &kp ESCAPE   &kp DELETE  &kp BACKSLASH
+           &none         &kp RIGHT     &kp DOWN          &kp LEFT                &kp UP                     &kp UP         &kp LEFT     &kp DOWN      &kp RIGHT    &none
+&mkp LCLK  &mkp RCLK     &mkp MCLK                                                                                                                    &mkp LCLK    &mkp RCLK   &mkp MCLK
+&mkp MB4   &mkp MB5      &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                                         &mkp MB4     &mkp MB5      &kp LG(TAB)  &kp LG(D)   &kp LCTRL
             >;
         };
 
